@@ -6,6 +6,16 @@ Rails.application.routes.draw do
   # SIGN UP
   
   get("/user_sign_up", {:controller => "users", :action => "sign_up" })
+  
+  # SIGN IN
+  
+  get("/user_sign_in", {:controller => "users", :action => "sign_in" })
+
+  post("/validate_user", {:controller => "users", :action => "validate" })
+
+  # SIGN OUT
+  
+  get("/user_sign_out", {:controller => "users", :action => "sign_out" })
 
 
   # CREATE
